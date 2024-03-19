@@ -3,7 +3,7 @@ import pygame
 from pygame.locals import *
 from time import sleep
 
-usb_path = '/media/pi/your_usb_drive'  # Update with your USB drive path
+usb_path = '/media/frey-frey/44C2-E3A2'  # Update with your USB drive path
 image_folder = 'images'  # Folder containing images on the USB
 
 def display_slideshow():
@@ -11,7 +11,7 @@ def display_slideshow():
     screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN))
     pygame.mouse.set_visible(False)
 
-    image_files = [f for f in os.listdir(os.path.join(usb_path, image_folder)) if f.endswith(('.jpg', '.png', '.jpeg'))]
+    image_files = [f for f in os.listdir(os.path.join(usb_path, image_folder)) if f.endswith(('.jpg', '.png', '.jpeg', '.JPEG', '.PNG'))]
     
     print(image_files)
     
